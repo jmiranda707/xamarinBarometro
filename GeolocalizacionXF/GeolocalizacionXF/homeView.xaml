@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GeolocalizacionXF.homeView"
+             xmlns:viewModels="clr-namespace:GeolocalizacionXF">
+    <ContentPage.BindingContext>
+        <viewModels:homeViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        
+            
+        
+        <StackLayout VerticalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,20,20,0" VerticalOptions="Start">
+                <Label Text="LATITUD:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Latitud, Mode=TwoWay}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0" VerticalOptions="Start">
+                <Label Text="LONGITUD:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Longitud, Mode=TwoWay}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0" VerticalOptions="Start">
+                <Label Text="ALTITUD:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Altitud, Mode=TwoWay}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0" VerticalOptions="Start">
+                <Label Text="PRESION (Hpa):"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Presion, Mode=TwoWay}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Beige">
+                <ListView 
+                    BackgroundColor="Beige"
+                HasUnevenRows="True"
+                HeightRequest="500"
+                ItemsSource="{Binding ListaLocations, Mode=TwoWay}"
+                Margin="6,5,6,5"
+                SeparatorColor="#910b20"
+                SeparatorVisibility="Default"
+                    x:Name="ListaLocations">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            
+                            <ViewCell>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0" VerticalOptions="Start">
+                                        <Label Text="ALTITUD:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                                        <Label Text="{Binding Aaltitud, Mode=TwoWay}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                                    </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0" VerticalOptions="Start">
+                                    <Label Text="LONGITUD:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                                    <Label Text="{Binding Alongitud, Mode=TwoWay}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                                </StackLayout>
+
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0" VerticalOptions="Start">
+                                        <Label Text="LATITUD:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                                        <Label Text="{Binding Alatitud, Mode=TwoWay}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0" VerticalOptions="Start">
+                                        <Label Text="PRESION:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                                        <Label Text="{Binding Apresion, Mode=TwoWay}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <Button Text="Obtener Geolocalización"
+                            Command="{Binding ObtenerPresionCommand}"
+                            Opacity="100"
+                    VerticalOptions="End"
+                            TextColor="White" 
+                            FontAttributes="Bold"
+                            Margin="15,15,20,15"
+                            HeightRequest="37"
+                            BackgroundColor="DarkOrange"></Button>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

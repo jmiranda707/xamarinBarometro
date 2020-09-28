@@ -1,0 +1,15 @@
+C:\GeolocalizacionXF\GeolocalizacionXF\bin\Debug\netstandard2.0\GeolocalizacionXF.deps.json
+C:\GeolocalizacionXF\GeolocalizacionXF\bin\Debug\netstandard2.0\GeolocalizacionXF.dll
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\GeolocalizacionXF.csprojAssemblyReference.cache
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\homeView.xaml.g.cs
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\GeolocalizacionXF.AssemblyInfoInputs.cache
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\GeolocalizacionXF.AssemblyInfo.cs
+C:\GeolocalizacionXF\GeolocalizacionXF\bin\Debug\netstandard2.0\ref\GeolocalizacionXF.dll
+C:\GeolocalizacionXF\GeolocalizacionXF\bin\Debug\netstandard2.0\GeolocalizacionXF.pdb
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\GeolocalizacionXF.dll
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\ref\GeolocalizacionXF.dll
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\GeolocalizacionXF.pdb
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\GeolocalizacionXF.csproj.CoreCompileInputs.cache
+C:\GeolocalizacionXF\GeolocalizacionXF\obj\Debug\netstandard2.0\XamlC.stamp
